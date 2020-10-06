@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thmeleag.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Add User</title>
+</head>
+<body>
+
+<form method="post" th:action="@{/user}">
+    <div class="form-group">
+        <label>Username:
+            <input type="text" name="username" class="form-control">
+        </label>
+    </div>
+    <div class="form-group">
+        <label>Email:
+            <input type="email" name="email" class="form-control">
+        </label>
+    </div>
+    <div class="form-group">
+        <label>Password:
+            <input type="password" name="password" class="form-control">
+        </label>
+    </div>
+    <div class="form-group">
+        <label>Re-Enter Password:
+            <input type="password" name="verify" class="form-control">
+        </label>
+    </div>
+    <div class="form-group">
+        <label>Re-Enter Password:
+            <input type="submit" value="Create User" class="btn btn-success">
+        </label>
+    </div>
+</form>
+
+</body>
+</html>
